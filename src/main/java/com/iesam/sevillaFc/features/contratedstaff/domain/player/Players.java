@@ -13,4 +13,11 @@ public class Players extends ContratedStaff {
     public String getDemarcation() {
         return demarcation;
     }
+
+    @Override
+    public String toString() {
+        return "Players{" +
+                "demarcation='" + demarcation + '\'' +
+                '}';
+    }
 }

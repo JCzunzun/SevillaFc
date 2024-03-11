@@ -43,4 +43,16 @@ public class Game {
     public String getGameDate() {
         return gameDate;
     }
+
+    @Override
+    public String toString() {
+        return "Game{" +
+                "id='" + id + '\'' +
+                ", localClub=" + localClub +
+                ", awayClub=" + awayClub +
+                ", result='" + result + '\'' +
+                ", arbitrator=" + arbitrator +
+                ", gameDate='" + gameDate + '\'' +
+                '}';
+    }
 }

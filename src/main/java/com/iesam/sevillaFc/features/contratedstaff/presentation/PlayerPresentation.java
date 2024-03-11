@@ -9,15 +9,15 @@ import com.iesam.sevillaFc.features.contratedstaff.domain.player.SavePlayerUseCa
 import java.util.ArrayList;
 
 public class PlayerPresentation {
-    public static void savePlayer(Players players){
+    public void savePlayer(Players players){
         SavePlayerUseCase savePlayerUseCase= new SavePlayerUseCase(new PlayerDatarepository());
         savePlayerUseCase.execute(players);
     }
-    public static void getPlayer(String id){
+    public void getPlayer(String id){
         GetPlayerUseCase getPlayerUseCase= new GetPlayerUseCase(new PlayerDatarepository());
         Players players = getPlayerUseCase.execute(id);
     }
-    public static void getPlayers(){
+    public void getPlayers(){
         GetPlayersUseCase getPlayersUseCase= new GetPlayersUseCase(new PlayerDatarepository());
         ArrayList<Players> players= getPlayersUseCase.execute();
         System.out.println(players.toString());

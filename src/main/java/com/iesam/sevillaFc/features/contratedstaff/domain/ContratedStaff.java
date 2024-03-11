@@ -28,4 +28,14 @@ public class ContratedStaff {
     public String getBirthDate() {
         return birthDate;
     }
+
+    @Override
+    public String toString() {
+        return "ContratedStaff{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthDate='" + birthDate + '\'' +
+                '}';
+    }
 }

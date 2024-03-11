@@ -32,4 +32,14 @@ public class Club {
     public ArrayList<Players> getPlayers() {
         return players;
     }
+
+    @Override
+    public String toString() {
+        return "Club{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", players=" + players +
+                '}';
+    }
 }
