@@ -7,14 +7,7 @@ import com.iesam.sevillaFc.features.contratedstaff.domain.player.Players;
 import java.util.ArrayList;
 
 public class PlayerDatarepository implements PlayerRepository{
-    private StaffLocalDataSource staffLocalDataSource;
-    private static PlayerDatarepository instanceStaff=null;
-    public static PlayerDatarepository newStaffInstance(){
-        if(instanceStaff == null){
-            instanceStaff= new PlayerDatarepository();
-        }
-        return instanceStaff;
-    }
+    private StaffLocalDataSource staffLocalDataSource= new StaffLocalDataSource();
 
     @Override
     public void savePlayer(Players players) {
